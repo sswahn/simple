@@ -1,0 +1,19 @@
+{
+  "name": "@sswahn/simple",
+  "version": "1.0.0-beta.1",
+  "license": "MIT",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "simple",
+    "AWS",
+    "S3",
+    "CRUD",
+    "node.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sswahn/simple"
+  }
+}
