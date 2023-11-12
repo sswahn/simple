@@ -21,31 +21,31 @@ import simple from '@sswahn/simple'
 ```
 
 ### Create
-Add items to your S3 bucket.
+Add objects to your S3 bucket.
 ```javascript
 const response = await simple.create(data)
 ```  
 
 ### Read
-Retrieve all items from your S3 bucket. Optionally, set a limit to control the listed number of returned items.
+Retrieve all items from your S3 bucket. Optionally, set a limit to control the listed number of returned objects.
 ```javascript
 const response = await simple.read(limit)
 ```
 
 ### Read One
-Retrieve an individual item from an S3 bucket using a key.
+Retrieve an individual object from an S3 bucket using a key.
 ```javascript
 const response = await simple.readOne(key)
 ```  
 
 ### Update
-Update an existing item in your S3 bucket.
+Update an existing object in your S3 bucket.
 ```javascript
 const response = await simple.update(data, key)
 ```
 
 ### Remove
-Delete an item from your S3 bucket. Provide the key of the item to remove.
+Delete an object from your S3 bucket. Provide the key of the object to remove.
 ```javascript
 const response = await simple.remove(key)
 ```
