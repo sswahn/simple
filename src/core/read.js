@@ -1,4 +1,4 @@
-import { S3Client, ListObjectsCommand } from '@aws-sdk/client-s3';
+import { S3Client, ListObjectsCommand } from '@aws-sdk/client-s3'
 
 const read = async () => {
   if (!process.env.BUCKET_NAME) {
