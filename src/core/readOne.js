@@ -11,11 +11,11 @@ const readOne = async key => {
     throw new TypeError('Argument must be of type object.')
   }
   try {
-    const client = new S3Client()
     const params = {
       Bucket: process.env.BUCKET_NAME,
       Key: key
     }
+    const client = new S3Client()
     const command = new GetObjectCommand(params)
     return client.send(command)
   } catch (error) {
