@@ -19,7 +19,7 @@ const readOne = async key => {
     const command = new GetObjectCommand(params)
     return client.send(command)
   } catch (error) {
-    throw new Error(`read: ${error}`)
+    throw new Error(`readOne: ${error}`)
   }
 }
 
