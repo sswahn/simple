@@ -27,7 +27,7 @@ const response = await simple.create(data)
 ```  
 
 ### Read
-Retrieve all items from your S3 bucket. Optionally, set a limit for the scan to control the number of returned items.
+Retrieve all items from your S3 bucket. Optionally, set a limit to control the listed number of returned items.
 ```javascript
 const response = await simple.read(limit)
 ```
