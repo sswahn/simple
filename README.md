@@ -21,13 +21,13 @@ import simple from '@sswahn/simple'
 ```
 
 ### Create
-Add objects to your S3 bucket.
+Add an object to your S3 bucket.
 ```javascript
 const response = await simple.create(data)
 ```  
 
 ### Read
-Retrieve all items from your S3 bucket. Optionally, set a limit to control the listed number of returned objects.
+Retrieve all objects from your S3 bucket. Optionally, set a limit to control the listed number of returned objects.
 ```javascript
 const response = await simple.read(limit)
 ```
