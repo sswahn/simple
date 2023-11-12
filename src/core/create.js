@@ -21,7 +21,7 @@ const create = async (data, key) => {
     }
     const client = new S3Client()
     const command = new PutObjectCommand(params)
-    const result = await client.send(command)
+    return client.send(command)
   } catch (error) {
     throw new Error(`create: ${error}`)
   }
