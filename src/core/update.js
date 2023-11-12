@@ -14,12 +14,12 @@ const update = async (data, key) => {
     throw new TypeError('Second argument must be of type object.')
   }
   try {
-    const client = new S3Client()
     const params = {
       Bucket: process.env.BUCKET_NAME,
       Body: data,
       Key: key
     }
+    const client = new S3Client()
     const command = new PutObjectCommand(params)
     return client.send(command)
   } catch (error) {
