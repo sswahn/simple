@@ -1,6 +1,6 @@
 import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3'
 
-const read = async key => {
+const readOne = async key => {
   if (!process.env.BUCKET_NAME) {
     throw new ReferenceError('BUCKET_NAME environmental variable is required.')
   }
@@ -23,4 +23,4 @@ const read = async key => {
   }
 }
 
-export default read
+export default readOne
