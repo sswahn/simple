@@ -17,8 +17,8 @@ const create = async (data, key) => {
     const client = new S3Client()
     const params = {
       Bucket: process.env.BUCKET_NAME,
-      Key: key,
       Body: data,
+      Key: key
     }
     const command = new PutObjectCommand(params)
     const result = await client.send(command)
